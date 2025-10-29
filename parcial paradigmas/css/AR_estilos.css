@@ -1,0 +1,13 @@
+:root { --gap: 1rem; font-family: system-ui, sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; background:#0b0b0b; color:#f7f7f7; }
+.tt-header { display:flex; gap:var(--gap); align-items:center; padding:var(--gap); background:#161616; position:sticky; top:0; }
+.tt-nav button { margin-right:.5rem; }
+.tt-cart-badge { margin-left:auto; background:#fff; color:#000; padding:.25rem .5rem; border-radius:999px; min-width:2rem; text-align:center; }
+.tt-grid { display:grid; gap:var(--gap); grid-template-columns: 2fr 1fr; padding:var(--gap); }
+.tt-products { display:grid; grid-template-columns: repeat(auto-fill, minmax(180px,1fr)); gap:var(--gap); }
+.tt-card { background:#1e1e1e; padding:var(--gap); border-radius:.75rem; }
+.tt-row { display:grid; grid-template-columns: 1fr 80px 100px 40px; gap:.5rem; align-items:center; margin:.25rem 0; }
+@media (max-width: 900px){ .tt-grid { grid-template-columns: 1fr; } }
+button { cursor:pointer; }
+button:focus, input:focus { outline: 2px solid #888; outline-offset: 2px; }
